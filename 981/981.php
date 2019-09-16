@@ -27,8 +27,10 @@ $less->compileFile('less/demo.less', 'css/demo.css');
         <link href="css/demo.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" type="text/css" href="css/981.css" />
         <script src="js/modernizr.custom.53451.js"></script>
+
     </head>
     <body>
+
         <?php include_once "981-content.php" ?>
 
         <script src="js/jquery.min.js"></script>
