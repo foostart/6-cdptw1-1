@@ -1,0 +1,84 @@
+.type .panel {
+  width: 100%;
+  padding: 10px 17px;
+  display: inline-block;
+  background: #fff;
+  border: 1px solid #E6E9ED;
+  opacity: 1;
+  transition: all .2s ease;
+  margin-bottom: 10px;
+  position: relative;
+  margin-top: 20px;
+}
+.type .panel .admin-title {
+  border-bottom: 2px solid #E6E9ED;
+  padding: 1px 5px 6px;
+  margin-bottom: 10px;
+}
+.type .panel .admin-title h2 {
+  margin: 5px 0 6px;
+  float: left;
+  display: block;
+  font-size: 20px;
+  color: #73879C;
+}
+.type .panel .admin-title h2 small {
+  margin-left: 10px;
+  font-size: 13px;
+}
+.type .panel .admin-title ul {
+  min-width: 70px;
+  margin-right: 0;
+  float: right;
+  list-style: none;
+  margin-top: 5px;
+}
+.type .panel .admin-title ul .link {
+  opacity: 1;
+}
+.type .panel .admin-title ul > li {
+  float: left;
+  cursor: pointer;
+}
+.type .panel .admin-title ul > li > a {
+  padding: 5px;
+  color: #BAB8B8;
+  font-size: 13px;
+}
+.type .panel .admin-content {
+  padding: 0 5px 6px;
+  width: 100%;
+}
+.type .panel .admin-content .listitem {
+  margin-top: 15px;
+}
+.type .panel .admin-content .listitem .date {
+  background: #ccc;
+  width: 52px;
+  margin-right: 10px;
+  border-radius: 10px;
+  padding: 5px;
+  float: left;
+  text-decoration: none;
+}
+.type .panel .admin-content .listitem .date .month,
+.type .panel .admin-content .listitem .date .d {
+  margin: 0;
+  text-align: center;
+  color: #fff;
+}
+.type .panel .admin-content .listitem .date .d {
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 700;
+}
+.type .panel .admin-content .listitem .items-info a.title {
+  font-weight: 700;
+  color: #5A738E;
+  text-decoration: none;
+}
+.type .panel .admin-content .listitem .items-info p {
+  margin-bottom: 0;
+  white-space: pre-line;
+  color: #73879C;
+}

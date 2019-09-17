@@ -1,0 +1,100 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 1, 2017, 8:55:09 AM
+    Author     : Administrator
+*/
+@font-size: 15px;
+@color: #73879C;
+@border-color: #E6E9ED;
+
+.type {
+    
+    .panel {
+        width: 100%;
+        padding: 10px 17px;
+        display: inline-block;
+        background: #fff;
+        border: 1px solid @border-color;
+        opacity: 1;
+        transition: all .2s ease;
+        margin-top: 10px;
+       
+            border-bottom: 2px solid @border-color;
+            padding: 1px 5px 6px;
+            margin-bottom: 10px;
+
+            h2 {
+                margin: 5px 0 6px;
+                float: left;
+                display: block;
+                font-size: 20px;
+                color: @color;
+
+                small {
+                    margin-left: 10px;
+                    font-size: @font-size;
+                }
+            }
+            ul {
+                min-width: 70px;
+                margin-right: 0;
+                float: right;
+                list-style: none;
+                padding-left: 0;
+                margin-top: 5px;
+
+                .link {
+                    opacity: 1;
+                }
+            }
+            ul > li {
+                float: left;
+                cursor: pointer;
+            }
+            ul > li > a {
+                padding: 5px;
+                color: #C5C7CB;
+                font-size: @font-size;
+            }
+        
+        .content {
+            padding: 0 5px 6px;
+            float: left;
+            clear: both;
+            margin-top: 5px;
+            width: 100%;
+            position: relative;
+            #chartReportContainer {
+                height: 150px;
+            }
+            .row {
+                margin-right: -10px;
+                margin-left: -10px;
+
+
+                h4 {
+                    font-size: @font-size;
+                    font-weight: 500;
+                    color: @color;
+                    margin: 18px;.rates {
+                    margin:0;
+                }
+                }
+
+                #chartPieContainer1, #chartPieContainer2, #chartPieContainer3{
+                    margin: 5px 10px 10px 0px;
+                    width: 110px;
+                    height: 150px;
+                }
+                .rate {
+                    margin:0;
+                }
+            }
+        }
+    }
+    
+}

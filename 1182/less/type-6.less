@@ -1,0 +1,111 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 1, 2017, 9:22:52 AM
+    Author     : Administrator
+*/
+@font-size-title: 20px;
+@font-size-body: 13px;
+@border-color: #E6E9ED;
+@float: left;
+@color: #73879C;
+.type {
+    .panel {
+        width: 100%;
+        padding: 10px 17px;
+        display: inline-block;
+        background: #fff;
+        border: 1px solid @border-color;
+        opacity: 1;
+        transition: all .2s ease;
+        margin-bottom: 10px;
+        position: relative;
+        margin-top: 20px;
+        .admin-title {
+            border-bottom: 2px solid @border-color;
+            padding: 1px 5px 6px;
+            margin-bottom: 10px;
+
+            h2 {
+                margin: 5px 0 6px;
+                float: left;
+                display: block;
+                font-size: @font-size-title;
+                color: @color;
+
+                small {
+                    margin-left: 10px;
+                    font-size: @font-size-body;
+                }
+            }
+
+            ul {
+                min-width: 70px;
+                margin-right: 0;
+                float: right;
+                list-style: none;
+                margin-top: 5px;
+
+                .link {
+                    opacity: 1;
+                }
+            }
+            ul > li {
+                float: @float;
+                cursor: pointer;
+            }
+            ul > li > a {
+                padding: 5px;
+                color: #BAB8B8;
+                font-size: @font-size-body;
+            }
+        }
+        .admin-content {
+            padding: 0 5px 6px;
+            width: 100%;
+
+            .listitem {
+                margin-top: 15px;
+
+                .date {
+                    background: #ccc;
+                    width: 52px;
+                    margin-right: 10px;
+                    border-radius: 10px;
+                    padding: 5px;
+                    float: @float;
+                    text-decoration: none;
+
+                    .month, .d {
+                        margin: 0;
+                        text-align: center;
+                        color: #fff;
+                    }
+
+                    .d {
+                        font-size: @font-size-title;
+                        line-height: 27px;
+                        font-weight: 700;
+                    }
+                }
+
+                .items-info {
+                    a.title {
+                        font-weight: 700;
+                        color: #5A738E;
+                        text-decoration: none;
+                    }
+                    p {
+                        margin-bottom: 0;
+                        white-space: pre-line;
+                        color: @color;
+                    }
+                }
+            }
+        }
+    }
+
+}

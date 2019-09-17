@@ -1,0 +1,164 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 1, 2017, 7:04:27 AM
+    Author     : Administrator
+*/
+@font-size: 13px;
+@background-color: #fff;
+@color: #73879C;
+@border-color: #E6E9ED;
+@list-style: none;
+.type-4 {
+    .admin-panel {
+        width: 100%;
+        padding: 10px 17px;
+        display: inline-block;
+        background: @background-color;
+        border: 1px solid @border-color;
+        opacity: 1;
+        transition: all .2s ease;
+        margin-bottom: 10px;
+        position: relative;
+        margin-top: 10px;
+        .admin-title {
+            border-bottom: 2px solid @border-color;
+            padding: 1px 5px 6px;
+            span, .fa{
+                color: #BAB8B8;
+            }
+
+            h2 {
+                margin: 5px 0 6px;
+                float: left;
+                display: block;
+                font-size: 20px;
+                color: @color;
+                small {
+                    margin-left: 10px;
+                    font-size: @font-size;
+                }
+            }
+            .filter-time {
+                font-size: @font-size;
+                .show-calendar {
+                    float: right;
+                    border: 1px solid @border-color;
+                    cursor: pointer;
+                    padding: 4px 10px;
+                    background-color: @background-color;
+                    #datepicker {
+                        border: none;
+                        color: @color;
+                    }
+                }
+            }
+
+        }
+        .admin-content {
+            padding: 0 5px 6px;
+            float: left;
+            clear: both;
+            margin-top: 5px;
+
+            #chartRainContainer {
+                height: 300px;
+                width: 100%;
+            }
+            .total-chart {
+                border-top: 1px solid #ccc;
+                margin-top: 15px;
+                padding-top: 5px;
+                margin-bottom: 0;
+                color: @color;
+                h2 {
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    font-size: 20px;
+                }
+
+                #chartCoalContainer2, #chartCoalContainer3, #chartCoalContainer4 {
+                    height: 120px;
+                }
+            }
+            .admin-title {
+                border-bottom: 2px solid @border-color;
+                padding: 1px 5px 6px;
+
+                h2 {
+                    margin: 5px 0 6px;
+                    float: left;
+                    display: block;
+                }
+                .profile-user {
+                    min-width: 70px;
+                    float: right;
+                    margin-right: 0;
+                    list-style: @list-style;
+                    padding-left: 0;
+                    margin-top: 5px;
+                }
+                .profile-user>li>a {
+                    padding: 5px;
+                    color: #C5C7CB;
+                    font-size: @font-size;
+                }
+                .profile-user>li {
+                    float: left;
+                    cursor: pointer;
+                }
+                .collapse-link, .close-link {
+                    opacity: 1;
+                }
+            }
+            ul.profiles-user {
+                padding-left: 0;
+                list-style: @list-style;
+                li:nth-child(odd) {
+                    background-color: #eee;
+                }
+
+                li {
+                    margin-top: 10px;
+
+                    .profile-thumb {
+                        border: 1px solid #9CC2CB!important;
+                        width: 50px;
+                        height: 50px;
+                        margin: 5px 10px 5px 0;
+                        border-radius: 50%;
+                        padding: 9px 12px;
+                        float:left;
+                        i {
+                            font-size: 30px;
+                            color: @color;
+                        }
+                    }
+                    .profile-comment {
+                        color: #5A738E;
+                        display: table-cell;
+                        vertical-align: top;
+                        width: 10000px;
+                        a.title {
+                            font-weight: 700;
+                            text-decoration: none;
+                        }
+                        p {
+                            margin-bottom: 0;
+                            small {
+                                font-size: 85%;
+                            }
+                            span {
+                                white-space: nowrap;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

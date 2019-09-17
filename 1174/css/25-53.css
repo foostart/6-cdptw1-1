@@ -1,0 +1,102 @@
+.type-25-53 .icon {
+  color: #73879C;
+  font-size: 13px;
+}
+.type-25-53 .icon a {
+  color: #5A738E;
+  text-decoration: none;
+}
+.type-25-53 .icon .x_panel {
+  width: 100%;
+  padding: 10px 17px;
+  display: inline-block;
+  background: #fff;
+  border: 1px solid #E6E9ED;
+  opacity: 1;
+}
+.type-25-53 .icon .x_title {
+  border-bottom: 2px solid #E6E9ED;
+  padding: 1px 5px 6px;
+}
+.type-25-53 .icon .x_title h2 {
+  margin: 5px 0 6px;
+  float: left;
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.type-25-53 .icon .x_title .navbar-right {
+  margin-right: 0px;
+}
+.type-25-53 .icon small {
+  margin-left: 10px;
+  font-weight: 400;
+  color: #777;
+}
+.type-25-53 .icon .navbar-right {
+  float: right;
+}
+.type-25-53 .icon .panel_toolbox>li {
+  float: left;
+  cursor: pointer;
+}
+.type-25-53 .icon .panel_toolbox>li>a {
+  padding: 5px;
+  color: #C5C7CB;
+  font-size: 14px;
+}
+.type-25-53 .icon h2 {
+  font-size: 18px;
+  font-weight: 400;
+}
+.type-25-53 .icon .fontawesome-icon-list a {
+  display: block;
+  line-height: 32px;
+  height: 32px;
+  padding-left: 10px;
+  border-radius: 4px;
+}
+.type-25-53 .icon .fontawesome-icon-list a:hover {
+  background-color: #ddd;
+  color: #fff;
+  text-decoration: none;
+}
+.type-25-53 .icon .fontawesome-icon-list a:hover i {
+  font-size: 28px;
+  vertical-align: -6px;
+}
+.type-25-53 .icon .fontawesome-icon-list i {
+  width: 32px;
+  font-size: 16px;
+  display: inline-block;
+  text-align: right;
+  margin-right: 10px;
+}
+.type-25-53 .icon .alert-success {
+  color: #fff;
+  background-color: rgba(38,185,154,0.88);
+  border-color: rgba(38,185,154,0.88);
+}
+.type-25-53 .icon .alert-success .alert-link {
+  color: #2b542c;
+}
+.type-25-53 .icon .alert-warning {
+  color: #E9EDEF;
+  background-color: rgba(243,156,18,0.88);
+  border-color: rgba(243,156,18,0.88);
+}
+.type-25-53 .icon .alert-warning .alert-link {
+  color: #66512c;
+}
+@media (max-width: 1200px) {
+  small {
+    display: none;
+  }
+  .x_title h2 {
+    width: 62%;
+    font-size: 17px;
+  }
+}
