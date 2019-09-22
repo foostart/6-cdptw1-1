@@ -1,18 +1,6 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : Mar 1, 2017, 7:04:27 AM
-    Author     : Administrator
-*/
-@font-size: 13px;
-@background-color: #fff;
-@color: #73879C;
-@border-color: #E6E9ED;
-@list-style: none;
-.type-4 {
+@import "../var/var.less";
+
+.type-1180 {
     .admin-panel {
         width: 100%;
         padding: 10px 17px;
@@ -26,7 +14,7 @@ and open the template in the editor.
         margin-top: 10px;
         .admin-title {
             border-bottom: 2px solid @border-color;
-            padding: 1px 5px 6px;
+            padding: 5px 5px 6px !important;
             span, .fa{
                 color: #BAB8B8;
             }
@@ -38,6 +26,7 @@ and open the template in the editor.
                 font-size: 20px;
                 color: @color;
                 small {
+                    line-height: @line-height;
                     margin-left: 10px;
                     font-size: @font-size;
                 }
@@ -53,6 +42,7 @@ and open the template in the editor.
                     #datepicker {
                         border: none;
                         color: @color;
+                        padding-left: 5px;
                     }
                 }
             }
@@ -71,22 +61,24 @@ and open the template in the editor.
             .total-chart {
                 border-top: 1px solid #ccc;
                 margin-top: 15px;
-                padding-top: 5px;
                 margin-bottom: 0;
                 color: @color;
                 h2 {
                     margin-top: 10px;
                     margin-bottom: 10px;
-                    font-size: 20px;
+                    font-size: @font-size + 7px;
                 }
 
                 #chartCoalContainer2, #chartCoalContainer3, #chartCoalContainer4 {
                     height: 120px;
                 }
+
+                span{
+                    font-size: @font-size + 4px;
+                }
             }
             .admin-title {
                 border-bottom: 2px solid @border-color;
-                padding: 1px 5px 6px;
 
                 h2 {
                     margin: 5px 0 6px;
@@ -120,7 +112,6 @@ and open the template in the editor.
                 li:nth-child(odd) {
                     background-color: #eee;
                 }
-
                 li {
                     margin-top: 10px;
 
@@ -145,6 +136,9 @@ and open the template in the editor.
                         a.title {
                             font-weight: 700;
                             text-decoration: none;
+                            line-height: 23px;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
                         }
                         p {
                             margin-bottom: 0;
@@ -159,6 +153,44 @@ and open the template in the editor.
                 }
             }
         }
+
+
+        a.canvasjs-chart-credit{
+            display: none;
+        }
     }
 
+    /*----------REPONSIVE-------------*/
+    @media (min-width: @md-992){
+
+    }
+
+    @media (max-width: @md-992){
+
+    }
+
+    @media (min-width: @sm-768){
+        //Total Chart
+        .col-chart{
+            padding: 11px 0;
+            border-bottom: @border-chart;
+        }
+    }
+
+    //mobile device
+    @media (max-width: @xs-480){
+        .admin-panel .admin-title h2 small{
+            display: block;
+            margin-left: 0;
+
+        }
+
+        .admin-panel .admin-title .filter-time .show-calendar{
+            float: none;
+            display: table;
+            margin: 0 auto;
+
+        }
+
+    }
 }

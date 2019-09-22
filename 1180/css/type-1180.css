@@ -12,7 +12,7 @@
 }
 .type-1180 .admin-panel .admin-title {
   border-bottom: 2px solid #E6E9ED;
-  padding: 1px 5px 6px;
+  padding: 5px 5px 6px !important;
 }
 .type-1180 .admin-panel .admin-title span,
 .type-1180 .admin-panel .admin-title .fa {
@@ -26,6 +26,7 @@
   color: #73879C;
 }
 .type-1180 .admin-panel .admin-title h2 small {
+  line-height: 2.5em;
   margin-left: 10px;
   font-size: 13px;
 }
@@ -42,6 +43,7 @@
 .type-1180 .admin-panel .admin-title .filter-time .show-calendar #datepicker {
   border: none;
   color: #73879C;
+  padding-left: 5px;
 }
 .type-1180 .admin-panel .admin-content {
   padding: 0 5px 6px;
@@ -56,7 +58,6 @@
 .type-1180 .admin-panel .admin-content .total-chart {
   border-top: 1px solid #ccc;
   margin-top: 15px;
-  padding-top: 5px;
   margin-bottom: 0;
   color: #73879C;
 }
@@ -70,9 +71,11 @@
 .type-1180 .admin-panel .admin-content .total-chart #chartCoalContainer4 {
   height: 120px;
 }
+.type-1180 .admin-panel .admin-content .total-chart span {
+  font-size: 17px;
+}
 .type-1180 .admin-panel .admin-content .admin-title {
   border-bottom: 2px solid #E6E9ED;
-  padding: 1px 5px 6px;
 }
 .type-1180 .admin-panel .admin-content .admin-title h2 {
   margin: 5px 0 6px;
@@ -132,6 +135,9 @@
 .type-1180 .admin-panel .admin-content ul.profiles-user li .profile-comment a.title {
   font-weight: 700;
   text-decoration: none;
+  line-height: 23px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .type-1180 .admin-panel .admin-content ul.profiles-user li .profile-comment p {
   margin-bottom: 0;
@@ -141,4 +147,24 @@
 }
 .type-1180 .admin-panel .admin-content ul.profiles-user li .profile-comment p span {
   white-space: nowrap;
+}
+.type-1180 .admin-panel a.canvasjs-chart-credit {
+  display: none;
+}
+@media (min-width: 768px) {
+  .type-1180 .col-chart {
+    padding: 11px 0;
+    border-bottom: 1px solid #ccc;
+  }
+}
+@media (max-width: 480px) {
+  .type-1180 .admin-panel .admin-title h2 small {
+    display: block;
+    margin-left: 0;
+  }
+  .type-1180 .admin-panel .admin-title .filter-time .show-calendar {
+    float: none;
+    display: table;
+    margin: 0 auto;
+  }
 }
