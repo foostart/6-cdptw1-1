@@ -19,6 +19,7 @@
                                 <div class="col-md-9">
                                     <div id="chartRainContainer"></div>
                                     <div class="total-chart">
+                                        <div class="col-chart col-md-4 col-sm-4 col-xs-12">
                                             <span>Total Sessions</span>
                                             <h2>231,809</h2>
                                             <div id="chartCoalContainer2"></div>
