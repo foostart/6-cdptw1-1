@@ -14,7 +14,7 @@
     }
     
     $less = new lessc;
-    $less->compileFile('less/type-5.less', 'css/type-5.css');
+    $less->compileFile('less/1181.less', 'css/1181.css');
     
 ?>
 <!DOCTYPE html>
@@ -22,7 +22,6 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <!-- Meta, title, CSS, favicons, etc. -->
-        <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -30,16 +29,18 @@
 
         <link href="<?php echo $url_path ?>/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="<?php echo $url_path ?>/css/font-awesome.min.css">
-<link href="<?php echo $url_path ?>/css/font-awesome.min.css" rel="stylesheet"/>
-        <link rel="stylesheet" href="<?php echo $url_path ?>/css/type-5.css">
-        <script src="<?php echo $url_path ?>/js/jquery-2.1.4.min.js" type="text/javascript"></script>
-        <script src="<?php echo $url_path ?>/js/bootstrap.min.js" type="text/javascript"></script>
-        <script src="<?php echo $url_path ?>/js/canvasjs.min.js" type="text/javascript"></script>
-        <script src="<?php echo $url_path ?>/js/chart-report.js" type="text/javascript"></script>
-        <script src="<?php echo $url_path ?>/js/collapse-close.js" type="text/javascript"></script>
+        <link href="<?php echo $url_path ?>/css/font-awesome.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="<?php echo $url_path ?>/css/1181.css">
     </head>
 
     <body>
-        <?php  $dir_block.include'1181-content.php'; ?>
+
+        <?php  include '1181-content.php'; ?>
+
+        <script src="<?php echo $url_path ?>/js/jquery-2.1.4.min.js" ></script>
+        <script src="<?php echo $url_path ?>/js/bootstrap.min.js" ></script>
+        <script src="<?php echo $url_path ?>/js/canvasjs.min.js" ></script>
+        <script src="<?php echo $url_path ?>/js/chart-report.js" ></script>
+        <script src="<?php echo $url_path ?>/js/collapse-close.js"></script>
     </body>
 </html>

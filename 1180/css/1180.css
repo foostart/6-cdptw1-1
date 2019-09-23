@@ -74,6 +74,9 @@
 .type-1180 .admin-panel .admin-content .total-chart span {
   font-size: 17px;
 }
+.type-1180 .admin-panel .admin-content .total-chart .col-chart {
+  padding: 11px 0;
+}
 .type-1180 .admin-panel .admin-content .admin-title {
   border-bottom: 2px solid #E6E9ED;
 }
@@ -90,14 +93,14 @@
   padding-left: 0;
   margin-top: 5px;
 }
-.type-1180 .admin-panel .admin-content .admin-title .profile-user>li>a {
+.type-1180 .admin-panel .admin-content .admin-title .profile-user li {
+  float: left;
+  cursor: pointer;
+}
+.type-1180 .admin-panel .admin-content .admin-title .profile-user li a {
   padding: 5px;
   color: #C5C7CB;
   font-size: 13px;
-}
-.type-1180 .admin-panel .admin-content .admin-title .profile-user>li {
-  float: left;
-  cursor: pointer;
 }
 .type-1180 .admin-panel .admin-content .admin-title .collapse-link,
 .type-1180 .admin-panel .admin-content .admin-title .close-link {
@@ -111,7 +114,8 @@
   background-color: #eee;
 }
 .type-1180 .admin-panel .admin-content ul.profiles-user li {
-  margin-top: 10px;
+  margin-top: 5px;
+  padding: 2px;
 }
 .type-1180 .admin-panel .admin-content ul.profiles-user li .profile-thumb {
   border: 1px solid #9CC2CB !important;
@@ -151,12 +155,6 @@
 .type-1180 .admin-panel a.canvasjs-chart-credit {
   display: none;
 }
-@media (min-width: 768px) {
-  .type-1180 .col-chart {
-    padding: 11px 0;
-    border-bottom: 1px solid #ccc;
-  }
-}
 @media (max-width: 480px) {
   .type-1180 .admin-panel .admin-title h2 small {
     display: block;
@@ -166,5 +164,8 @@
     float: none;
     display: table;
     margin: 0 auto;
+  }
+  .type-1180 .col-chart {
+    border-bottom: 1px solid #ccc;
   }
 }

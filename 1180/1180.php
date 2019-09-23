@@ -3,7 +3,6 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <!-- Meta, title, CSS, favicons, etc. -->
-        <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -18,16 +17,16 @@
             include ('./libs/lessc.inc.php');
         }
         $less = new lessc;
-        $less->compileFile('less/type-1180.less', 'css/type-1180.css');
+        $less->compileFile('less/1180.less', 'css/1180.css');
         ?>
-        <link rel="stylesheet" href="css/type-1180.css">
-        <script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
-        <script src="js/bootstrap.min.js" type="text/javascript"></script>
-        <script src="js/canvasjs.min.js" type="text/javascript"></script>
-        <script src="js/chart-rain.js" type="text/javascript"></script>
-        <script src="js/collapse-close.js" type="text/javascript"></script>
-        <script src="js/jquery-ui.min.js" type="text/javascript"></script>
-        <script src="js/datetimepicker.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="css/1180.css">
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/canvasjs.min.js"></script>
+        <script src="js/chart-rain.js"></script>
+        <script src="js/collapse-close.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/datetimepicker.js"></script>
     </head>
 
     <body>

@@ -1,0 +1,85 @@
+.type-1181 .panel {
+  width: 100%;
+  padding: 10px 17px;
+  display: inline-block;
+  background: #fff;
+  border: 2px solid #E6E9ED;
+  opacity: 1;
+  transition: all .2s ease;
+  margin: 10px 0;
+}
+.type-1181 .panel h2 {
+  margin: 5px 0 6px;
+  float: left;
+  display: block;
+  font-size: 20px;
+  color: #73879C;
+}
+.type-1181 .panel h2 small {
+  margin-left: 10px;
+  font-size: 15px;
+}
+.type-1181 .panel ul {
+  min-width: 70px;
+  margin-right: 0;
+  float: right;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 5px;
+}
+.type-1181 .panel ul .link {
+  opacity: 1;
+}
+.type-1181 .panel ul li {
+  float: left;
+  cursor: pointer;
+}
+.type-1181 .panel ul li a {
+  padding: 5px;
+  color: #C5C7CB;
+  font-size: 15px;
+}
+.type-1181 .panel .content {
+  padding: 0 5px 6px;
+  float: left;
+  clear: both;
+  margin-top: 5px;
+  width: 100%;
+  position: relative;
+}
+.type-1181 .panel .content #chartReportContainer {
+  height: 150px;
+}
+.type-1181 .panel .content .row {
+  margin-right: -10px;
+  margin-left: -10px;
+}
+.type-1181 .panel .content .row h4 {
+  font-size: 15px;
+  font-weight: 500;
+  color: #73879C;
+  margin: 18px;
+}
+.type-1181 .panel .content .row .rate {
+  margin: 0 auto;
+  line-height: 20px;
+  text-align: center;
+}
+.type-1181 .panel .content .row .chartPieContainer {
+  margin: 0 auto;
+  width: 110px;
+  height: 150px;
+}
+.type-1181 .panel .content .row .col-chart {
+  margin-top: 10px;
+}
+.type-1181 a.canvasjs-chart-credit {
+  display: none;
+}
+@media (max-width: 480px) {
+  .type-1181 .panel h2 small {
+    margin-left: 0;
+    display: block;
+    line-height: 25px;
+  }
+}

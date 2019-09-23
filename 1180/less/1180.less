@@ -76,6 +76,10 @@
                 span{
                     font-size: @font-size + 4px;
                 }
+
+                .col-chart{
+                    padding: 11px 0;
+                }
             }
             .admin-title {
                 border-bottom: 2px solid @border-color;
@@ -92,15 +96,16 @@
                     list-style: @list-style;
                     padding-left: 0;
                     margin-top: 5px;
-                }
-                .profile-user>li>a {
-                    padding: 5px;
-                    color: #C5C7CB;
-                    font-size: @font-size;
-                }
-                .profile-user>li {
-                    float: left;
-                    cursor: pointer;
+                    li {
+                        float: left;
+                        cursor: pointer;
+
+                        a{
+                            padding: 5px;
+                            color: #C5C7CB;
+                            font-size: @font-size;
+                        }
+                    }
                 }
                 .collapse-link, .close-link {
                     opacity: 1;
@@ -113,7 +118,8 @@
                     background-color: #eee;
                 }
                 li {
-                    margin-top: 10px;
+                    margin-top: 5px;
+                    padding: 2px;
 
                     .profile-thumb {
                         border: 1px solid #9CC2CB!important;
@@ -154,7 +160,6 @@
             }
         }
 
-
         a.canvasjs-chart-credit{
             display: none;
         }
@@ -170,11 +175,7 @@
     }
 
     @media (min-width: @sm-768){
-        //Total Chart
-        .col-chart{
-            padding: 11px 0;
-            border-bottom: @border-chart;
-        }
+
     }
 
     //mobile device
@@ -192,5 +193,9 @@
 
         }
 
+        //Total Chart
+        .col-chart{
+            border-bottom: @border-chart;
+        }
     }
 }

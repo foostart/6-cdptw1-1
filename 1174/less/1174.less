@@ -1,9 +1,8 @@
-.type-25-53{
-    @font-size:18px;
-    @color:#fff;
+@import "../var/var.less";
 
+.type-1174{
     .icon{
-        color: #73879C;
+        color: @icon-color;
         font-size:13px;
         a {
             color: #5A738E;
@@ -19,7 +18,8 @@
         }
         .x_title {
             border-bottom: 2px solid #E6E9ED;
-            padding: 1px 5px 6px;
+            padding: 5px 5px 9px;
+
             h2 {
                 margin: 5px 0 6px;
                 float: left;
@@ -64,6 +64,11 @@
                 height: 32px;
                 padding-left: 10px;
                 border-radius: 4px;
+
+                //overflow text
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
             }
             a:hover{
                 background-color: #ddd;
@@ -84,38 +89,34 @@
         }
         .alert-success {
             color: #fff;
-            background-color: rgba(38,185,154,.88);
-            border-color: rgba(38,185,154,.88);
+            .box-color-blue;
+
             .alert-link {
                 color: #2b542c;
             }
         }
 
-
         .alert-warning {
             color: #E9EDEF;
-            background-color: rgba(243,156,18,.88);
-            border-color: rgba(243,156,18,.88);
+            .box-color-orange;
+
             .alert-link {
                 color: #66512c;
             }
         }
 
-
-
     }
 
-
-
+    @media(max-width:1200px){
+        small{
+            display: none;
+        }
+        .x_title h2 {
+            width: 62%;
+            font-size: 17px;
+        }
+    }
 
 }
-@media(max-width:1200px){
-    small{
-        display: none;
-    }
-    .x_title h2 {
-        width: 62%;
-        font-size: 17px;
-    }
-}
+
 

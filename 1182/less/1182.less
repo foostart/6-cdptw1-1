@@ -1,18 +1,6 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : Mar 1, 2017, 9:22:52 AM
-    Author     : Administrator
-*/
-@font-size-title: 20px;
-@font-size-body: 13px;
-@border-color: #E6E9ED;
-@float: left;
-@color: #73879C;
-.type {
+@import "../var/var.less";
+
+.type-1182 {
     .panel {
         width: 100%;
         padding: 10px 17px;
@@ -21,13 +9,14 @@ and open the template in the editor.
         border: 1px solid @border-color;
         opacity: 1;
         transition: all .2s ease;
-        margin-bottom: 10px;
+        margin-bottom: @margin-bottom;
         position: relative;
         margin-top: 20px;
+
         .admin-title {
             border-bottom: 2px solid @border-color;
             padding: 1px 5px 6px;
-            margin-bottom: 10px;
+            margin-bottom: @margin-bottom;
 
             h2 {
                 margin: 5px 0 6px;
@@ -52,16 +41,17 @@ and open the template in the editor.
                 .link {
                     opacity: 1;
                 }
+                li {
+                    float: @float;
+                    cursor: pointer;
+                    a {
+                        padding: 5px;
+                        color: #BAB8B8;
+                        font-size: @font-size-body;
+                    }
+                }
             }
-            ul > li {
-                float: @float;
-                cursor: pointer;
-            }
-            ul > li > a {
-                padding: 5px;
-                color: #BAB8B8;
-                font-size: @font-size-body;
-            }
+
         }
         .admin-content {
             padding: 0 5px 6px;
@@ -108,4 +98,21 @@ and open the template in the editor.
         }
     }
 
+    /*====== Responsive ======*/
+    @media (max-width: @md-992){
+        .panel .admin-title h2 small{
+            margin-left: 0;
+            display: block;
+            line-height: 25px;
+        }
+    }
+
+    @media (min-width: @sm-768){
+        .panel{
+            padding: 10px 5px;
+        }
+        .admin-title ul{
+            padding: 0;
+        }
+    }
 }
