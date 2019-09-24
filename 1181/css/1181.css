@@ -27,17 +27,18 @@
   padding-left: 0;
   margin-top: 5px;
 }
-.type-1181 .panel ul .link {
-  opacity: 1;
-}
 .type-1181 .panel ul li {
   float: left;
   cursor: pointer;
 }
-.type-1181 .panel ul li a {
+.type-1181 .panel ul li .link {
+  opacity: 1;
   padding: 5px;
   color: #C5C7CB;
   font-size: 15px;
+}
+.type-1181 .panel ul li .link:hover {
+  color: #2e6da4;
 }
 .type-1181 .panel .content {
   padding: 0 5px 6px;

@@ -9,9 +9,9 @@
         border: 1px solid @border-color;
         opacity: 1;
         transition: all .2s ease;
-        margin-bottom: 10px;
+        margin-bottom: @margin;
         position: relative;
-        margin-top: 10px;
+        margin-top: @margin;
         .admin-title {
             border-bottom: 2px solid @border-color;
             padding: 5px 5px 6px !important;
@@ -27,7 +27,7 @@
                 color: @color;
                 small {
                     line-height: @line-height;
-                    margin-left: 10px;
+                    margin-left: @margin;
                     font-size: @font-size;
                 }
             }
@@ -64,8 +64,8 @@
                 margin-bottom: 0;
                 color: @color;
                 h2 {
-                    margin-top: 10px;
-                    margin-bottom: 10px;
+                    margin-top: @margin;
+                    margin-bottom: @margin;
                     font-size: @font-size + 7px;
                 }
 
@@ -104,6 +104,12 @@
                             padding: 5px;
                             color: #C5C7CB;
                             font-size: @font-size;
+
+                            &:hover{
+                                i{
+                                    color: #2e6da4;
+                                }
+                            }
                         }
                     }
                 }
@@ -159,25 +165,19 @@
                 }
             }
         }
+        .dropdown-menu {
+            min-width: unset;
+            li{
+                float: none !important;
+            }
 
+        }
         a.canvasjs-chart-credit{
             display: none;
         }
     }
 
     /*----------REPONSIVE-------------*/
-    @media (min-width: @md-992){
-
-    }
-
-    @media (max-width: @md-992){
-
-    }
-
-    @media (min-width: @sm-768){
-
-    }
-
     //mobile device
     @media (max-width: @xs-480){
         .admin-panel .admin-title h2 small{
@@ -185,14 +185,11 @@
             margin-left: 0;
 
         }
-
         .admin-panel .admin-title .filter-time .show-calendar{
             float: none;
             display: table;
             margin: 0 auto;
-
         }
-
         //Total Chart
         .col-chart{
             border-bottom: @border-chart;

@@ -14,7 +14,7 @@
                                 </a>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <a href="#" class="link dropdown-toggle" data-toggle="dropdown">
                                     <i class="fa fa-wrench"></i>
                                 </a>
                                 <ul class="dropdown-menu">

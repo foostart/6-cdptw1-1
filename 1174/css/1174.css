@@ -37,9 +37,9 @@
   display: block;
   font-size: 18px;
   font-weight: 400;
-  white-space: nowrap;
-  text-overflow: ellipsis;
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .type-1174 .icon .x_title .navbar-right {
   margin-right: 0px;
@@ -52,11 +52,11 @@
 .type-1174 .icon .navbar-right {
   float: right;
 }
-.type-1174 .icon .panel_toolbox>li {
+.type-1174 .icon .panel_toolbox li {
   float: left;
   cursor: pointer;
 }
-.type-1174 .icon .panel_toolbox>li>a {
+.type-1174 .icon .panel_toolbox li a {
   padding: 5px;
   color: #C5C7CB;
   font-size: 14px;
@@ -100,7 +100,7 @@
   color: #2b542c;
 }
 .type-1174 .icon .alert-warning {
-  color: #E9EDEF;
+  color: #E6E9ED;
   background-color: rgba(243,156,18,0.88);
   border-color: rgba(243,156,18,0.88);
 }

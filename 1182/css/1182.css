@@ -45,6 +45,9 @@
   color: #BAB8B8;
   font-size: 13px;
 }
+.type-1182 .panel .admin-title ul li a:hover {
+  color: #2e6da4;
+}
 .type-1182 .panel .admin-content {
   padding: 0 5px 6px;
   width: 100%;

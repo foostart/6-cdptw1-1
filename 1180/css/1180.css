@@ -102,6 +102,9 @@
   color: #C5C7CB;
   font-size: 13px;
 }
+.type-1180 .admin-panel .admin-content .admin-title .profile-user li a:hover i {
+  color: #2e6da4;
+}
 .type-1180 .admin-panel .admin-content .admin-title .collapse-link,
 .type-1180 .admin-panel .admin-content .admin-title .close-link {
   opacity: 1;
@@ -151,6 +154,12 @@
 }
 .type-1180 .admin-panel .admin-content ul.profiles-user li .profile-comment p span {
   white-space: nowrap;
+}
+.type-1180 .admin-panel .dropdown-menu {
+  min-width: unset;
+}
+.type-1180 .admin-panel .dropdown-menu li {
+  float: none !important;
 }
 .type-1180 .admin-panel a.canvasjs-chart-credit {
   display: none;

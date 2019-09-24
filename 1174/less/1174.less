@@ -12,12 +12,12 @@
             width: 100%;
             padding: 10px 17px;
             display: inline-block;
-            background:#fff;
-            border: 1px solid #E6E9ED;
+            background: @color;
+            border: 1px solid @border-color;
             opacity: 1;
         }
         .x_title {
-            border-bottom: 2px solid #E6E9ED;
+            border-bottom: 2px solid @border-color;
             padding: 5px 5px 9px;
 
             h2 {
@@ -26,9 +26,8 @@
                 display: block;
                 font-size:@font-size;
                 font-weight: 400;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-                overflow: hidden;
+
+                .overflow-text;
             }
             .navbar-right{
                 margin-right: 0px;
@@ -43,15 +42,19 @@
         .navbar-right{
             float: right;
         }
-        .panel_toolbox>li {
-            float: left;
-            cursor: pointer;
+        .panel_toolbox {
+            li{
+                float: left;
+                cursor: pointer;
+
+                a {
+                    padding: 5px;
+                    color: #C5C7CB;
+                    font-size: 14px;
+                }
+            }
         }
-        .panel_toolbox>li>a {
-            padding: 5px;
-            color: #C5C7CB;
-            font-size: 14px;
-        }
+
         h2{
             font-size: 18px;
             font-weight: 400;
@@ -65,21 +68,17 @@
                 padding-left: 10px;
                 border-radius: 4px;
 
-                //overflow text
-                overflow: hidden;
-                text-overflow: ellipsis;
-                white-space: nowrap;
-            }
-            a:hover{
-                background-color: #ddd;
-                color: #fff;
-                text-decoration: none;
-                i{
-                    font-size: 28px;
-                    vertical-align: -6px;
+                .overflow-text;
+                &:hover{
+                    background-color: #ddd;
+                    color: @color;
+                    text-decoration: none;
+                    i{
+                        font-size: 28px;
+                        vertical-align: -6px;
+                    }
                 }
             }
-
             i{
                 width: 32px;
                 font-size: 16px;
@@ -89,7 +88,7 @@
             }
         }
         .alert-success {
-            color: #fff;
+            color: @color;
             .box-color-blue;
 
             .alert-link {
@@ -98,7 +97,7 @@
         }
 
         .alert-warning {
-            color: #E9EDEF;
+            color: @border-color;
             .box-color-orange;
 
             .alert-link {
