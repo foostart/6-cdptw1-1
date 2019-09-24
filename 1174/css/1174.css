@@ -61,6 +61,14 @@
   color: #C5C7CB;
   font-size: 14px;
 }
+.type-1174 .icon .panel_toolbox ul.dropdown-menu {
+  position: absolute;
+  left: -10rem;
+}
+.type-1174 .icon .panel_toolbox ul.dropdown-menu li {
+  float: none;
+  text-align: center;
+}
 .type-1174 .icon h2 {
   font-size: 18px;
   font-weight: 400;

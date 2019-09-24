@@ -26,6 +26,11 @@
   margin-left: 10px;
   font-size: 13px;
 }
+.type-1182 .panel .admin-title ul.dropdown-menu {
+  position: absolute;
+  top: 2em;
+  left: -1em;
+}
 .type-1182 .panel .admin-title ul {
   min-width: 70px;
   margin-right: 0;
@@ -33,12 +38,12 @@
   list-style: none;
   margin-top: 5px;
 }
-.type-1182 .panel .admin-title ul .link {
-  opacity: 1;
-}
 .type-1182 .panel .admin-title ul li {
   float: left;
   cursor: pointer;
+}
+.type-1182 .panel .admin-title ul li .link {
+  opacity: 1;
 }
 .type-1182 .panel .admin-title ul li a {
   padding: 5px;
