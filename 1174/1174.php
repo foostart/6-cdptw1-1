@@ -14,6 +14,7 @@
         $less->compileFile('less/1174.less', 'css/1174.css');
         ?>
         <link href="css/1174.css" rel="stylesheet" type="text/css" />
+        
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/close-icon.js"></script>
