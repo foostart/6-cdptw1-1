@@ -1,3 +1,29 @@
+.border-radius {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.box-shadow {
+  -webkit-box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+  box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+}
+.background {
+  background: #90bd9e;
+  background: -moz-linear-gradient(top,#90bd9e 0%,#72a081 100%);
+  background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#90bd9e),color-stop(100%,#72a081));
+  background: -webkit-linear-gradient(top,#90bd9e 0%,#72a081 100%);
+  background: -o-linear-gradient(top,#90bd9e 0%,#72a081 100%);
+  background: -ms-linear-gradient(top,#90bd9e 0%,#72a081 100%);
+  background: linear-gradient(top,#90bd9e 0%,#72a081 100%);
+}
+@font-face {
+  font-family: 'BebasNeueRegular';
+  src: url('../fonts/BebasNeue-webfont.eot');
+  src: url('../fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/BebasNeue-webfont.woff') format('woff'), url('../fonts/BebasNeue-webfont.ttf') format('truetype'), url('../fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 .transform {
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
@@ -19,12 +45,164 @@
   -ms-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-@font-face {
-  font-family: 'BebasNeueRegular';
-  src: url('../fonts/BebasNeue-webfont.eot');
-  src: url('../fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/BebasNeue-webfont.woff') format('woff'), url('../fonts/BebasNeue-webfont.ttf') format('truetype'), url('../fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
-  font-weight: normal;
-  font-style: normal;
+.type-981 {
+  font-family: Cambria, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+  background: #333 url(../images/bg.jpg) repeat top left;
+  font-weight: 400;
+  font-size: 15px;
+  color: #f0f0f0;
+  overflow-y: scroll;
+  width: 100vw;
+  height: 100vh;
+}
+.type-981 .style-demo {
+  display: inline-block;
+  border: 1px solid #719c7f;
+  padding: 4px 10px 3px;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 0px 3px;
+  font-weight: 800;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.9);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+  box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+  background: #90bd9e;
+  background: -moz-linear-gradient(top,#90bd9e 0%,#72a081 100%);
+  background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#90bd9e),color-stop(100%,#72a081));
+  background: -webkit-linear-gradient(top,#90bd9e 0%,#72a081 100%);
+  background: -o-linear-gradient(top,#90bd9e 0%,#72a081 100%);
+  background: -ms-linear-gradient(top,#90bd9e 0%,#72a081 100%);
+  background: linear-gradient(top,#90bd9e 0%,#72a081 100%);
+}
+.type-981 a {
+  color: #ddd;
+  text-decoration: none;
+}
+.type-981 a:hover {
+  color: #fff;
+}
+.type-981 .container {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+.type-981 .container header {
+  padding: 20px 30px 10px 30px;
+  margin-bottom: 40px;
+  position: relative;
+  display: block;
+  text-align: center;
+}
+.type-981 .container header h1 {
+  font-family: "BebasNeueRegular", Arial, sans-serif;
+  font-size: 35px;
+  position: relative;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: rgba(101,141,114,0.9);
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  padding: 0px 0px 5px 0px;
+}
+.type-981 .container header h1 span {
+  color: #a0caad;
+  text-shadow: 1px 1px 1px rgba(255,255,255,0.4);
+}
+.type-981 .clr {
+  clear: both;
+}
+.type-981 .codrops-top {
+  line-height: 24px;
+  font-size: 11px;
+  background: rgba(255,255,255,0.5);
+  text-transform: uppercase;
+  z-index: 9999;
+  position: relative;
+  box-shadow: 1px 0px 2px rgba(0,0,0,0.2);
+  -webkit-animation: slideOut 0.5s ease-in-out 0.3s backwards;
+}
+.type-981 .codrops-top a {
+  padding: 0px 10px;
+  letter-spacing: 1px;
+  color: #333;
+  text-shadow: 0px 1px 1px #fff;
+  display: block;
+  float: left;
+}
+.type-981 .codrops-top a:hover {
+  background: #fff;
+}
+.type-981 .codrops-top span.right {
+  float: right;
+}
+.type-981 .codrops-top span.right a {
+  float: left;
+  display: block;
+}
+.type-981 .codrops-demos {
+  text-align: center;
+  display: block;
+  padding-top: 20px;
+}
+.type-981 .codrops-demos a {
+  display: inline-block;
+  border: 1px solid #719c7f;
+  padding: 4px 10px 3px;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 0px 3px;
+  font-weight: 800;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.9);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+  box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+  background: #90bd9e;
+  background: -moz-linear-gradient(top,#90bd9e 0%,#72a081 100%);
+  background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#90bd9e),color-stop(100%,#72a081));
+  background: -webkit-linear-gradient(top,#90bd9e 0%,#72a081 100%);
+  background: -o-linear-gradient(top,#90bd9e 0%,#72a081 100%);
+  background: -ms-linear-gradient(top,#90bd9e 0%,#72a081 100%);
+  background: linear-gradient(top,#90bd9e 0%,#72a081 100%);
+}
+.type-981 .codrops-demos a:hover {
+  background: #85b995;
+}
+.type-981 .codrops-demos a:active {
+  -webkit-box-shadow: 0px 1px 1px rgba(255,255,255,0.4);
+  -moz-box-shadow: 0px 1px 1px rgba(255,255,255,0.4);
+  box-shadow: 0px 1px 1px rgba(255,255,255,0.4);
+}
+.type-981 .codrops-demos a.current-demo {
+  color: #506757;
+  text-shadow: 0px 1px 1px rgba(255,255,255,0.3);
+}
+@-webkit-keyframes slideOut {
+  .type-981 0% {
+    top: -30px;
+    opacity: 0;
+  }
+  .type-981 100% {
+    top: 0px;
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 767px) {
+  .type-981 .container > header {
+    text-align: center;
+  }
+  .type-981 p.codrops-demos {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
 }
 .type-981 .dg-container {
   width: 100%;

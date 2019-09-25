@@ -24,23 +24,19 @@ $less->compileFile('less/demo.less', 'css/demo.css');
         <meta charset="UTF-8" />
         <title>3D Gallery with CSS3 and jQuery</title>
 
-        <link href="css/demo.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" type="text/css" href="css/981.css" />
+
+        <!--Slideshow-->
         <script src="js/modernizr.custom.53451.js"></script>
 
     </head>
     <body>
-
         <?php include_once "981-content.php" ?>
 
         <script src="js/jquery.min.js"></script>
         <script src="js/jquery.gallery.js"></script>
-        <script>
-            $(function () {
-                $('#dg-container').gallery({
-					autoplay: true
-				});
-            });
-        </script>
+
+        <!--My Script-->
+        <script src="js/scripts.js"></script>
     </body>
 </html>
