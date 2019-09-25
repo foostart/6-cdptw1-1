@@ -87,7 +87,7 @@
 .type-1181 .panel .content .row .col-chart {
   margin-top: 10px;
 }
-.type-1181 a.canvasjs-chart-credit {
+.type-1181 .highcharts-credits {
   display: none;
 }
 @media (max-width: 480px) {

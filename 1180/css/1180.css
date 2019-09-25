@@ -161,7 +161,7 @@
 .type-1180 .admin-panel .dropdown-menu li {
   float: none !important;
 }
-.type-1180 .admin-panel a.canvasjs-chart-credit {
+.type-1180 .admin-panel .highcharts-credits {
   display: none;
 }
 @media (max-width: 480px) {

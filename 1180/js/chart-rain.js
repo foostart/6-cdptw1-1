@@ -1,179 +1,895 @@
 window.onload = function () {
-    var chart = new CanvasJS.Chart("chartRainContainer",
+    Highcharts.chart('chartRainContainer', {
+
+    title: {
+        text: 'Logarithmic axis demo'
+    },
+
+    xAxis: {
+        tickInterval: 1,
+        type: 'logarithmic'
+    },
+
+    yAxis: {
+        type: 'logarithmic',
+        minorTickInterval: 0.1
+    },
+
+    tooltip: {
+        headerFormat: '<b>{series.name}</b><br />',
+        pointFormat: 'x = {point.x}, y = {point.y}'
+    },
+
+    series: [{
+        data: [1, 2, 4, 8, 16, 32, 64, 128, 256, 512],
+        pointStart: 1
+    }]
+});
+
+    // Create the chart
+    Highcharts.chart('chartCoalContainer2', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: ''
+        },
+        subtitle: {
+            text: ''
+        },
+        xAxis: {
+            type: 'category'
+        },
+        yAxis: {
+            title: {
+                text: ''
+            }
+
+        },
+        legend: {
+            enabled: false
+        },
+        plotOptions: {
+            series: {
+                borderWidth: 0,
+                dataLabels: {
+                    enabled: true,
+                    format: '{point.y:.1f}%'
+                }
+            }
+        },
+
+        tooltip: {
+            headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+            pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}%</b> of total<br/>'
+        },
+
+        series: [
             {
-                animationEnabled: true,
-                axisX: {
-                    valueFormatString: "DD-MMM",
-                    interval: 10,
-                    intervalType: "day",
-                    labelAngle: -50,
-                    labelFontColor: "rgb(0,75,141)",
-                    minimum: new Date(2012, 06, 10)
-                },
-                axisY: {
-                    interlacedColor: "#F0FFFF",
-                    tickColor: "azure",
-                    titleFontColor: "rgb(0,75,141)",
-                    valueFormatString: "#M,,.",
-                    interval: 100000000
-                },
+                name: "Browsers",
+                colorByPoint: true,
                 data: [
                     {
-                        indexLabelFontColor: "darkSlateGray",
-                        name: 'views',
-                        type: "area",
-                        color: "rgba(0,75,141,0.7)",
-                        markerSize: 8,
-                        dataPoints: [
-                            {x: new Date(2012, 06, 15), y: 0, indexLabel: "Release", indexLabelOrientation: "vertical", indexLabelFontColor: "orangered", markerColor: "orangered"},
-                            {x: new Date(2012, 06, 18), y: 2000000},
-                            {x: new Date(2012, 06, 23), y: 6000000},
-                            {x: new Date(2012, 07, 1), y: 10000000, indexLabel: "10m"},
-                            {x: new Date(2012, 07, 11), y: 21000000},
-                            {x: new Date(2012, 07, 23), y: 50000000},
-                            {x: new Date(2012, 07, 31), y: 75000000},
-                            {x: new Date(2012, 08, 04), y: 100000000, indexLabel: "100m"},
-                            {x: new Date(2012, 08, 10), y: 125000000},
-                            {x: new Date(2012, 08, 13), y: 150000000},
-                            {x: new Date(2012, 08, 16), y: 175000000},
-                            {x: new Date(2012, 08, 18), y: 200000000, indexLabel: "200m"},
-                            {x: new Date(2012, 08, 21), y: 225000000},
-                            {x: new Date(2012, 08, 24), y: 250000000},
-                            {x: new Date(2012, 08, 26), y: 275000000},
-                            {x: new Date(2012, 08, 28), y: 302000000, indexLabel: "300m"}
-                        ]
-                    }
-
+                        name: "Chrome",
+                        y: 62.74,
+                        drilldown: "Chrome"
+                    },
+                    {
+                        name: "Firefox",
+                        y: 10.57,
+                        drilldown: "Firefox"
+                    },
+                    {
+                        name: "Internet Explorer",
+                        y: 7.23,
+                        drilldown: "Internet Explorer"
+                    },
+                    {
+                        name: "Safari",
+                        y: 5.58,
+                        drilldown: "Safari"
+                    },
+               
                 ]
-            });
-
+            }
+        ],
+        drilldown: {
+            series: [
+                {
+                    name: "Chrome",
+                    id: "Chrome",
+                    data: [
+                        [
+                            "v65.0",
+                            0.1
+                        ],
+                        [
+                            "v64.0",
+                            1.3
+                        ],
+                        [
+                            "v63.0",
+                            53.02
+                        ],
+                        [
+                            "v62.0",
+                            1.4
+                        ],
+                        [
+                            "v61.0",
+                            0.88
+                        ],
+                        [
+                            "v60.0",
+                            0.56
+                        ],
+                        [
+                            "v59.0",
+                            0.45
+                        ],
+                        [
+                            "v58.0",
+                            0.49
+                        ],
+                        [
+                            "v57.0",
+                            0.32
+                        ],
+                        [
+                            "v56.0",
+                            0.29
+                        ],
+                        [
+                            "v55.0",
+                            0.79
+                        ],
+                        [
+                            "v54.0",
+                            0.18
+                        ],
+                        [
+                            "v51.0",
+                            0.13
+                        ],
+                        [
+                            "v49.0",
+                            2.16
+                        ],
+                        [
+                            "v48.0",
+                            0.13
+                        ],
+                        [
+                            "v47.0",
+                            0.11
+                        ],
+                        [
+                            "v43.0",
+                            0.17
+                        ],
+                        [
+                            "v29.0",
+                            0.26
+                        ]
+                    ]
+                },
+                {
+                    name: "Firefox",
+                    id: "Firefox",
+                    data: [
+                        [
+                            "v58.0",
+                            1.02
+                        ],
+                        [
+                            "v57.0",
+                            7.36
+                        ],
+                        [
+                            "v56.0",
+                            0.35
+                        ],
+                        [
+                            "v55.0",
+                            0.11
+                        ],
+                        [
+                            "v54.0",
+                            0.1
+                        ],
+                        [
+                            "v52.0",
+                            0.95
+                        ],
+                        [
+                            "v51.0",
+                            0.15
+                        ],
+                        [
+                            "v50.0",
+                            0.1
+                        ],
+                        [
+                            "v48.0",
+                            0.31
+                        ],
+                        [
+                            "v47.0",
+                            0.12
+                        ]
+                    ]
+                },
+                {
+                    name: "Internet Explorer",
+                    id: "Internet Explorer",
+                    data: [
+                        [
+                            "v11.0",
+                            6.2
+                        ],
+                        [
+                            "v10.0",
+                            0.29
+                        ],
+                        [
+                            "v9.0",
+                            0.27
+                        ],
+                        [
+                            "v8.0",
+                            0.47
+                        ]
+                    ]
+                },
+                {
+                    name: "Safari",
+                    id: "Safari",
+                    data: [
+                        [
+                            "v11.0",
+                            3.39
+                        ],
+                        [
+                            "v10.1",
+                            0.96
+                        ],
+                        [
+                            "v10.0",
+                            0.36
+                        ],
+                        [
+                            "v9.1",
+                            0.54
+                        ],
+                        [
+                            "v9.0",
+                            0.13
+                        ],
+                        [
+                            "v5.1",
+                            0.2
+                        ]
+                    ]
+                },
+                {
+                    name: "Edge",
+                    id: "Edge",
+                    data: [
+                        [
+                            "v16",
+                            2.6
+                        ],
+                        [
+                            "v15",
+                            0.92
+                        ],
+                        [
+                            "v14",
+                            0.4
+                        ],
+                        [
+                            "v13",
+                            0.1
+                        ]
+                    ]
+                },
+                {
+                    name: "Opera",
+                    id: "Opera",
+                    data: [
+                        [
+                            "v50.0",
+                            0.96
+                        ],
+                        [
+                            "v49.0",
+                            0.82
+                        ],
+                        [
+                            "v12.1",
+                            0.14
+                        ]
+                    ]
+                }
+            ]
+        }
+    });
     
+   // Create the chart
+    Highcharts.chart('chartCoalContainer3', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: ''
+        },
+        subtitle: {
+            text: ''
+        },
+        xAxis: {
+            type: 'category'
+        },
+        yAxis: {
+            title: {
+                text: ''
+            }
 
-    var chart2 = new CanvasJS.Chart("chartCoalContainer2",
+        },
+        legend: {
+            enabled: false
+        },
+        plotOptions: {
+            series: {
+                borderWidth: 0,
+                dataLabels: {
+                    enabled: true,
+                    format: '{point.y:.1f}%'
+                }
+            }
+        },
+
+        tooltip: {
+            headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+            pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}%</b> of total<br/>'
+        },
+
+        series: [
             {
-                animationEnabled: true,
+                name: "Browsers",
+                colorByPoint: true,
                 data: [
                     {
-                        dataPoints: [
-                            {label: "USA"},
-                            {label: "Russia"},
-                            {label: "China"},
-                            {label: "India"},
-                            {label: "Australia"},
-                            {label: "SA"}
-
-                        ]
-                    }, {
-                        dataPoints: [
-                            {y: 135305, label: "USA"},
-                            {y: 107922, label: "Russia"},
-                            {y: 52300, label: "China"},
-                            {y: 3360, label: "India"},
-                            {y: 39900, label: "Australia"},
-                            {y: 0, label: "SA"}
-
-                        ]
-                    }
+                        name: "Chrome",
+                        y: 62.74,
+                        drilldown: "Chrome"
+                    },
+                    {
+                        name: "Firefox",
+                        y: 10.57,
+                        drilldown: "Firefox"
+                    },
+                    {
+                        name: "Internet Explorer",
+                        y: 7.23,
+                        drilldown: "Internet Explorer"
+                    },
+                    {
+                        name: "Safari",
+                        y: 5.58,
+                        drilldown: "Safari"
+                    },
+               
                 ]
-                ,
-                legend: {
-                    cursor: "pointer",
-                    itemclick: function (e) {
-                        if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
-                            e.dataSeries.visible = false;
-                        } else
-                        {
-                            e.dataSeries.visible = true;
-                        }
-                        chart2.render();
-                    }
+            }
+        ],
+        drilldown: {
+            series: [
+                {
+                    name: "Chrome",
+                    id: "Chrome",
+                    data: [
+                        [
+                            "v65.0",
+                            0.1
+                        ],
+                        [
+                            "v64.0",
+                            1.3
+                        ],
+                        [
+                            "v63.0",
+                            53.02
+                        ],
+                        [
+                            "v62.0",
+                            1.4
+                        ],
+                        [
+                            "v61.0",
+                            0.88
+                        ],
+                        [
+                            "v60.0",
+                            0.56
+                        ],
+                        [
+                            "v59.0",
+                            0.45
+                        ],
+                        [
+                            "v58.0",
+                            0.49
+                        ],
+                        [
+                            "v57.0",
+                            0.32
+                        ],
+                        [
+                            "v56.0",
+                            0.29
+                        ],
+                        [
+                            "v55.0",
+                            0.79
+                        ],
+                        [
+                            "v54.0",
+                            0.18
+                        ],
+                        [
+                            "v51.0",
+                            0.13
+                        ],
+                        [
+                            "v49.0",
+                            2.16
+                        ],
+                        [
+                            "v48.0",
+                            0.13
+                        ],
+                        [
+                            "v47.0",
+                            0.11
+                        ],
+                        [
+                            "v43.0",
+                            0.17
+                        ],
+                        [
+                            "v29.0",
+                            0.26
+                        ]
+                    ]
+                },
+                {
+                    name: "Firefox",
+                    id: "Firefox",
+                    data: [
+                        [
+                            "v58.0",
+                            1.02
+                        ],
+                        [
+                            "v57.0",
+                            7.36
+                        ],
+                        [
+                            "v56.0",
+                            0.35
+                        ],
+                        [
+                            "v55.0",
+                            0.11
+                        ],
+                        [
+                            "v54.0",
+                            0.1
+                        ],
+                        [
+                            "v52.0",
+                            0.95
+                        ],
+                        [
+                            "v51.0",
+                            0.15
+                        ],
+                        [
+                            "v50.0",
+                            0.1
+                        ],
+                        [
+                            "v48.0",
+                            0.31
+                        ],
+                        [
+                            "v47.0",
+                            0.12
+                        ]
+                    ]
+                },
+                {
+                    name: "Internet Explorer",
+                    id: "Internet Explorer",
+                    data: [
+                        [
+                            "v11.0",
+                            6.2
+                        ],
+                        [
+                            "v10.0",
+                            0.29
+                        ],
+                        [
+                            "v9.0",
+                            0.27
+                        ],
+                        [
+                            "v8.0",
+                            0.47
+                        ]
+                    ]
+                },
+                {
+                    name: "Safari",
+                    id: "Safari",
+                    data: [
+                        [
+                            "v11.0",
+                            3.39
+                        ],
+                        [
+                            "v10.1",
+                            0.96
+                        ],
+                        [
+                            "v10.0",
+                            0.36
+                        ],
+                        [
+                            "v9.1",
+                            0.54
+                        ],
+                        [
+                            "v9.0",
+                            0.13
+                        ],
+                        [
+                            "v5.1",
+                            0.2
+                        ]
+                    ]
+                },
+                {
+                    name: "Edge",
+                    id: "Edge",
+                    data: [
+                        [
+                            "v16",
+                            2.6
+                        ],
+                        [
+                            "v15",
+                            0.92
+                        ],
+                        [
+                            "v14",
+                            0.4
+                        ],
+                        [
+                            "v13",
+                            0.1
+                        ]
+                    ]
+                },
+                {
+                    name: "Opera",
+                    id: "Opera",
+                    data: [
+                        [
+                            "v50.0",
+                            0.96
+                        ],
+                        [
+                            "v49.0",
+                            0.82
+                        ],
+                        [
+                            "v12.1",
+                            0.14
+                        ]
+                    ]
                 }
-            });
+            ]
+        }
+    });
+    
+    // Create the chart
+    Highcharts.chart('chartCoalContainer4', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: ''
+        },
+        subtitle: {
+            text: ''
+        },
+        xAxis: {
+            type: 'category'
+        },
+        yAxis: {
+            title: {
+                text: ''
+            }
 
-    var chart3 = new CanvasJS.Chart("chartCoalContainer3",
+        },
+        legend: {
+            enabled: false
+        },
+        plotOptions: {
+            series: {
+                borderWidth: 0,
+                dataLabels: {
+                    enabled: true,
+                    format: '{point.y:.1f}%'
+                }
+            }
+        },
+
+        tooltip: {
+            headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+            pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}%</b> of total<br/>'
+        },
+
+        series: [
             {
-                animationEnabled: true,
+                name: "Browsers",
+                colorByPoint: true,
                 data: [
                     {
-                        dataPoints: [
-                            {label: "USA"},
-                            {label: "Russia"},
-                            {label: "China"},
-                            {label: "India"},
-                            {label: "Australia"},
-                            {label: "SA"}
-
-                        ]
-                    }, {
-                        dataPoints: [
-                            {y: 135305, label: "USA"},
-                            {y: 107922, label: "Russia"},
-                            {y: 52300, label: "China"},
-                            {y: 3360, label: "India"},
-                            {y: 39900, label: "Australia"},
-                            {y: 0, label: "SA"}
-
-                        ]
-                    }
-                ]
-                ,
-                legend: {
-                    cursor: "pointer",
-                    itemclick: function (e) {
-                        if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
-                            e.dataSeries.visible = false;
-                        } else
-                        {
-                            e.dataSeries.visible = true;
-                        }
-                        chart3.render();
-                    }
-                }
-            });
-    var chart4 = new CanvasJS.Chart("chartCoalContainer4",
-            {
-                animationEnabled: true,
-                data: [
+                        name: "Chrome",
+                        y: 62.74,
+                        drilldown: "Chrome"
+                    },
                     {
-                        dataPoints: [
-                            {label: "USA"},
-                            {label: "Russia"},
-                            {label: "China"},
-                            {label: "India"},
-                            {label: "Australia"},
-                            {label: "SA"}
-
-                        ]
-                    }, {
-                        dataPoints: [
-                            {y: 135305, label: "USA"},
-                            {y: 107922, label: "Russia"},
-                            {y: 52300, label: "China"},
-                            {y: 3360, label: "India"},
-                            {y: 39900, label: "Australia"},
-                            {y: 0, label: "SA"}
-
-                        ]
-                    }
+                        name: "Firefox",
+                        y: 10.57,
+                        drilldown: "Firefox"
+                    },
+                    {
+                        name: "Internet Explorer",
+                        y: 7.23,
+                        drilldown: "Internet Explorer"
+                    },
+                    {
+                        name: "Safari",
+                        y: 5.58,
+                        drilldown: "Safari"
+                    },
+               
                 ]
-                ,
-                legend: {
-                    cursor: "pointer",
-                    itemclick: function (e) {
-                        if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
-                            e.dataSeries.visible = false;
-                        } else
-                        {
-                            e.dataSeries.visible = true;
-                        }
-                        chart4.render();
-                    }
+            }
+        ],
+        drilldown: {
+            series: [
+                {
+                    name: "Chrome",
+                    id: "Chrome",
+                    data: [
+                        [
+                            "v65.0",
+                            0.1
+                        ],
+                        [
+                            "v64.0",
+                            1.3
+                        ],
+                        [
+                            "v63.0",
+                            53.02
+                        ],
+                        [
+                            "v62.0",
+                            1.4
+                        ],
+                        [
+                            "v61.0",
+                            0.88
+                        ],
+                        [
+                            "v60.0",
+                            0.56
+                        ],
+                        [
+                            "v59.0",
+                            0.45
+                        ],
+                        [
+                            "v58.0",
+                            0.49
+                        ],
+                        [
+                            "v57.0",
+                            0.32
+                        ],
+                        [
+                            "v56.0",
+                            0.29
+                        ],
+                        [
+                            "v55.0",
+                            0.79
+                        ],
+                        [
+                            "v54.0",
+                            0.18
+                        ],
+                        [
+                            "v51.0",
+                            0.13
+                        ],
+                        [
+                            "v49.0",
+                            2.16
+                        ],
+                        [
+                            "v48.0",
+                            0.13
+                        ],
+                        [
+                            "v47.0",
+                            0.11
+                        ],
+                        [
+                            "v43.0",
+                            0.17
+                        ],
+                        [
+                            "v29.0",
+                            0.26
+                        ]
+                    ]
+                },
+                {
+                    name: "Firefox",
+                    id: "Firefox",
+                    data: [
+                        [
+                            "v58.0",
+                            1.02
+                        ],
+                        [
+                            "v57.0",
+                            7.36
+                        ],
+                        [
+                            "v56.0",
+                            0.35
+                        ],
+                        [
+                            "v55.0",
+                            0.11
+                        ],
+                        [
+                            "v54.0",
+                            0.1
+                        ],
+                        [
+                            "v52.0",
+                            0.95
+                        ],
+                        [
+                            "v51.0",
+                            0.15
+                        ],
+                        [
+                            "v50.0",
+                            0.1
+                        ],
+                        [
+                            "v48.0",
+                            0.31
+                        ],
+                        [
+                            "v47.0",
+                            0.12
+                        ]
+                    ]
+                },
+                {
+                    name: "Internet Explorer",
+                    id: "Internet Explorer",
+                    data: [
+                        [
+                            "v11.0",
+                            6.2
+                        ],
+                        [
+                            "v10.0",
+                            0.29
+                        ],
+                        [
+                            "v9.0",
+                            0.27
+                        ],
+                        [
+                            "v8.0",
+                            0.47
+                        ]
+                    ]
+                },
+                {
+                    name: "Safari",
+                    id: "Safari",
+                    data: [
+                        [
+                            "v11.0",
+                            3.39
+                        ],
+                        [
+                            "v10.1",
+                            0.96
+                        ],
+                        [
+                            "v10.0",
+                            0.36
+                        ],
+                        [
+                            "v9.1",
+                            0.54
+                        ],
+                        [
+                            "v9.0",
+                            0.13
+                        ],
+                        [
+                            "v5.1",
+                            0.2
+                        ]
+                    ]
+                },
+                {
+                    name: "Edge",
+                    id: "Edge",
+                    data: [
+                        [
+                            "v16",
+                            2.6
+                        ],
+                        [
+                            "v15",
+                            0.92
+                        ],
+                        [
+                            "v14",
+                            0.4
+                        ],
+                        [
+                            "v13",
+                            0.1
+                        ]
+                    ]
+                },
+                {
+                    name: "Opera",
+                    id: "Opera",
+                    data: [
+                        [
+                            "v50.0",
+                            0.96
+                        ],
+                        [
+                            "v49.0",
+                            0.82
+                        ],
+                        [
+                            "v12.1",
+                            0.14
+                        ]
+                    ]
                 }
-            });
-
-
-    chart.render();
-    chart2.render();
-    chart3.render();
-    chart4.render();
+            ]
+        }
+    });
 }

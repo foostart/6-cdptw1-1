@@ -40,7 +40,8 @@
         <script src="<?php echo $url_path ?>/js/jquery-2.1.4.min.js" ></script>
         <script src="<?php echo $url_path ?>/js/bootstrap.min.js" ></script>
         <script src="<?php echo $url_path ?>/js/canvasjs.min.js" ></script>
-        <script src="<?php echo $url_path ?>/js/chart-report.js" ></script>
+        <script src="<?php echo $url_path ?>/js/highcharts.js" ></script>
+        <script src="<?php echo $url_path ?>/js/chart.js" ></script>
         <script src="<?php echo $url_path ?>/js/collapse-close.js"></script>
     </body>
 </html>
