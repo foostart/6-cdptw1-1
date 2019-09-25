@@ -22,7 +22,6 @@
         <link rel="stylesheet" href="css/1180.css">
         <script src="js/jquery-2.1.4.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        <script src="js/canvasjs.min.js"></script>
         <script src="js/highcharts.js"></script>
         <script src="js/chart-rain.js"></script>
         <script src="js/collapse-close.js"></script>
