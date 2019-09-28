@@ -20,7 +20,7 @@
   float: left;
   display: block;
   font-size: 20px;
-  color: #73879C;
+  color: ;
 }
 .type-1182 .panel .admin-title h2 small {
   margin-left: 10px;
@@ -51,7 +51,7 @@
   font-size: 13px;
 }
 .type-1182 .panel .admin-title ul li a:hover {
-  color: #2e6da4;
+  color: #2E6DA4;
 }
 .type-1182 .panel .admin-content {
   padding: 0 5px 6px;
@@ -88,7 +88,7 @@
 .type-1182 .panel .admin-content .listitem .items-info p {
   margin-bottom: 0;
   white-space: pre-line;
-  color: #73879C;
+  color: ;
 }
 @media (max-width: 992px) {
   .type-1182 .panel .admin-title h2 small {
