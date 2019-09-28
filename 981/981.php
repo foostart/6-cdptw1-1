@@ -26,15 +26,13 @@ $less->compileFile('less/981.less', 'css/981.css');
 
         <!--Slideshow-->
         <script src="js/modernizr.custom.53451.js"></script>
-
-    </head>
-    <body>
-        <?php include_once "981-content.php" ?>
-
         <script src="js/jquery.min.js"></script>
         <script src="js/jquery.gallery.js"></script>
 
         <!--My Script-->
         <script src="js/scripts.js"></script>
+    </head>
+    <body>
+        <?php include_once "981-content.php" ?>
     </body>
 </html>

@@ -224,7 +224,7 @@
   width: 24px;
   height: 25px;
   opacity: 0.8;
-  background: ;
+  background: transparent url(../images/arrows.png) no-repeat top left;
 }
 .type-981 .dg-container nav span:hover {
   opacity: 1;

@@ -30,13 +30,13 @@
         <link href="<?php echo $url_path ?>/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="<?php echo $url_path ?>/css/font-awesome.min.css">
         <link rel="stylesheet" href="<?php echo $url_path ?>/css/1182.css">
+        
+        <script src="<?php echo $url_path ?>/js/jquery-2.1.4.min.js"></script>
+        <script src="<?php echo $url_path ?>/js/bootstrap.min.js"></script>
+        <script src="<?php echo $url_path ?>/js/collapse-close.js"></script>
     </head>
 
     <body>
         <?php  include'1182-content.php'; ?>
-
-        <script src="<?php echo $url_path ?>/js/jquery-2.1.4.min.js"></script>
-        <script src="<?php echo $url_path ?>/js/bootstrap.min.js"></script>
-        <script src="<?php echo $url_path ?>/js/collapse-close.js"></script>
     </body>
 </html>
