@@ -55,6 +55,17 @@
   width: 100vw;
   height: 100vh;
 }
+.type-981 .swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.type-981 .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 420px;
+  height: 200px;
+}
 .type-981 .style-demo {
   display: inline-block;
   border: 1px solid #719c7f;
@@ -204,12 +215,12 @@
     left: auto;
   }
 }
-.type-981 .dg-container {
+.type-981 .swiper-container {
   width: 100%;
   height: 450px;
   position: relative;
 }
-.type-981 .dg-container nav {
+.type-981 .swiper-container nav {
   width: 58px;
   position: absolute;
   z-index: 1000;
@@ -217,7 +228,7 @@
   left: 50%;
   margin-left: -29px;
 }
-.type-981 .dg-container nav span {
+.type-981 .swiper-container nav span {
   text-indent: -9000px;
   float: left;
   cursor: pointer;
@@ -226,31 +237,19 @@
   opacity: 0.8;
   background: transparent url(../images/arrows.png) no-repeat top left;
 }
-.type-981 .dg-container nav span:hover {
+.type-981 .swiper-container nav span:hover {
   opacity: 1;
 }
-.type-981 .dg-container nav .dg-next {
+.type-981 .swiper-container nav .swiper-next {
   background-position: top right;
   margin-left: 10px;
 }
-.type-981 .dg-wrapper {
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  -o-transform-style: preserve-3d;
-  -ms-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-perspective: ;
-  -moz-perspective: 1000px;
-  -o-perspective: 1000px;
-  -ms-perspective: 1000px;
-  perspective: 1000px;
-  width: 481px;
-  height: 316px;
+.type-981 .swiper-wrapper {
   margin: 0 auto;
   position: relative;
 }
-.type-981 .dg-wrapper a,
-.type-981 .dg-wrapper a.dg-transition {
+.type-981 .swiper-wrapper a,
+.type-981 .swiper-wrapper a.swiper-transition {
   width: 482px;
   height: 316px;
   display: block;
@@ -265,13 +264,13 @@
   -ms-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-.type-981 .dg-wrapper a img,
-.type-981 .dg-wrapper a.dg-transition img {
+.type-981 .swiper-wrapper a img,
+.type-981 .swiper-wrapper a.swiper-transition img {
   display: block;
   padding: 41px 0px 0px 1px;
 }
-.type-981 .dg-wrapper a div,
-.type-981 .dg-wrapper a.dg-transition div {
+.type-981 .swiper-wrapper a div,
+.type-981 .swiper-wrapper a.swiper-transition div {
   font-style: italic;
   text-align: center;
   line-height: 50px;
@@ -280,9 +279,9 @@
   font-size: 16px;
   width: 100%;
   bottom: -55px;
-  display: none;
+  display: block;
   position: absolute;
 }
-.type-981 .dg-wrapper a.dg-center div {
+.type-981 .swiper-wrapper a.swiper-center div {
   display: block;
 }

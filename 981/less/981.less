@@ -73,6 +73,19 @@
     width: 100vw;
     height: 100vh;
 
+    .swiper-container {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 420px;
+        height: 200px;
+
+    }
+
     .style-demo{
         display: inline-block;
         border: 1px solid #719c7f;
@@ -200,7 +213,7 @@
         }
     }
 
-    .dg-container{
+    .swiper-container{
         width: 100%;
         height: 450px;
         position: relative;
@@ -225,22 +238,17 @@
                     opacity: 1;
                 }
             }
-            .dg-next{
+            .swiper-next{
                 background-position: top right;
                 margin-left: 10px;
             }
         }
     }
-    .dg-wrapper{
-        .transform;
-        .perspective;
-
-        width: 481px;
-        height: 316px;
+    .swiper-wrapper{
         margin: 0 auto;
         position: relative;
 
-        a, a.dg-transition{
+        a, a.swiper-transition{
             width: 482px;
             height: 316px;
             display: block;
@@ -266,12 +274,12 @@
                 font-size: 16px;
                 width: 100%;
                 bottom: -55px;
-                display: none;
+                display: block;
                 position: absolute;
             }
         }
 
-        a.dg-center div{
+        a.swiper-center div{
             display: block;
         }
     }

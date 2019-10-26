@@ -22,17 +22,19 @@ $less->compileFile('less/981.less', 'css/981.css');
         <meta charset="UTF-8" />
         <title>3D Gallery with CSS3 and jQuery</title>
 
+        <link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
         <link rel="stylesheet" type="text/css" href="css/981.css" />
 
         <!--Slideshow-->
         <script src="js/modernizr.custom.53451.js"></script>
         <script src="js/jquery.min.js"></script>
-        <script src="js/jquery.gallery.js"></script>
+        <script src="js/swiper.min.js"></script>
+
+    </head>
+    <body style="margin: 0">
+        <?php include_once "981-content.php" ?>
 
         <!--My Script-->
         <script src="js/scripts.js"></script>
-    </head>
-    <body>
-        <?php include_once "981-content.php" ?>
     </body>
 </html>
