@@ -30,6 +30,22 @@ $less->compileFile('less/981.less', 'css/981.css');
         <script src="js/jquery.min.js"></script>
         <script src="js/swiper.min.js"></script>
 
+        <style>
+        .visible{
+            visibility: hidden !important;
+        }
+        .swiper-container {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 300px;
+            height: 300px;
+        }
+        </style>
     </head>
     <body style="margin: 0">
         <?php include_once "981-content.php" ?>

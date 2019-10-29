@@ -1,107 +1,136 @@
-.type-1182 .panel {
+.type-1182 {
+  color: #73879c;
+  margin-top: 20px;
+}
+.type-1182 .x_panel {
   width: 100%;
   padding: 10px 17px;
   display: inline-block;
   background: #fff;
-  border: 1px solid #E6E9ED;
+  border: 1px solid #e6e9ed;
+  -webkit-column-break-inside: avoid;
+  -moz-column-break-inside: avoid;
   opacity: 1;
-  transition: all .2s ease;
+  transition: all 0.2s ease;
   margin-bottom: 10px;
-  position: relative;
-  margin-top: 20px;
 }
-.type-1182 .panel .admin-title {
-  border-bottom: 2px solid #E6E9ED;
+.type-1182 .x_panel a:hover {
+  text-decoration: none;
+}
+.type-1182 .x_panel .x_title {
+  margin-bottom: 10px;
+  border-bottom: 2px solid #e6e9ed;
   padding: 1px 5px 6px;
-  margin-bottom: 10px;
 }
-.type-1182 .panel .admin-title h2 {
+.type-1182 .x_panel .x_title h2 {
   margin: 5px 0 6px;
   float: left;
   display: block;
-  font-size: 20px;
-  color: ;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: inherit;
+  line-height: 1.1;
+  color: inherit;
 }
-.type-1182 .panel .admin-title h2 small {
-  margin-left: 10px;
-  font-size: 13px;
-}
-.type-1182 .panel .admin-title ul.dropdown-menu {
+.type-1182 .x_panel .x_title ul.dropdown-menu {
   position: absolute;
   top: 2em;
-  left: -1em;
-}
-.type-1182 .panel .admin-title ul {
-  min-width: 70px;
+  left: -1.5em;
+  min-width: 74px;
   margin-right: 0;
   float: right;
   list-style: none;
   margin-top: 5px;
 }
-.type-1182 .panel .admin-title ul li {
+.type-1182 .x_panel .x_title .panel_toolbox {
+  float: right;
+  min-width: 70px;
+}
+.type-1182 .x_panel .x_title .panel_toolbox li {
   float: left;
   cursor: pointer;
 }
-.type-1182 .panel .admin-title ul li .link {
-  opacity: 1;
-}
-.type-1182 .panel .admin-title ul li a {
+.type-1182 .x_panel .x_title .panel_toolbox li a {
   padding: 5px;
-  color: #BAB8B8;
-  font-size: 13px;
+  color: #c5c7cb;
+  font-size: 14px;
 }
-.type-1182 .panel .admin-title ul li a:hover {
+.type-1182 .x_panel .x_title .panel_toolbox li a:hover {
   color: #2E6DA4;
 }
-.type-1182 .panel .admin-content {
+.type-1182 .x_panel .x_title .navbar-right {
+  margin-right: 0;
+}
+.type-1182 .x_panel .x_title .nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.type-1182 .x_panel .x_title .nav li {
+  position: relative;
+  display: block;
+}
+.type-1182 .x_panel .x_title .nav li a {
+  position: relative;
+  display: block;
+  background-color: transparent;
+}
+.type-1182 .x_panel .x_content {
   padding: 0 5px 6px;
+  float: left;
+  clear: both;
+  margin-top: 5px;
+}
+.type-1182 .x_panel .x_content .media {
   width: 100%;
+  overflow: hidden;
+  zoom: 1;
 }
-.type-1182 .panel .admin-content .listitem {
-  margin-top: 15px;
-}
-.type-1182 .panel .admin-content .listitem .date {
+.type-1182 .x_panel .x_content .media .date {
   background: #ccc;
   width: 52px;
   margin-right: 10px;
   border-radius: 10px;
   padding: 5px;
-  float: left;
-  text-decoration: none;
 }
-.type-1182 .panel .admin-content .listitem .date .month,
-.type-1182 .panel .admin-content .listitem .date .d {
+.type-1182 .x_panel .x_content .media .date .month {
   margin: 0;
   text-align: center;
   color: #fff;
 }
-.type-1182 .panel .admin-content .listitem .date .d {
-  font-size: 20px;
+.type-1182 .x_panel .x_content .media .date .day {
+  font-size: 27px;
   line-height: 27px;
   font-weight: 700;
+  margin: 0;
+  text-align: center;
+  color: #fff;
 }
-.type-1182 .panel .admin-content .listitem .items-info a.title {
+.type-1182 .x_panel .x_content .media .pull-left {
+  float: left !important;
+}
+.type-1182 .x_panel .x_content .media .media-body {
+  display: table-cell;
+  vertical-align: top;
+}
+.type-1182 .x_panel .x_content .media .media-body .title {
   font-weight: 700;
-  color: #5A738E;
-  text-decoration: none;
 }
-.type-1182 .panel .admin-content .listitem .items-info p {
-  margin-bottom: 0;
-  white-space: pre-line;
-  color: ;
+.type-1182 .x_panel .x_content .media .media-body a {
+  color: #5a738e;
 }
-@media (max-width: 992px) {
-  .type-1182 .panel .admin-title h2 small {
+.type-1182 .x_panel .x_content .media .media-body a:hover {
+  color: #2a5583;
+}
+.type-1182 .x_panel .x_content .media:first-child {
+  margin-top: 0;
+}
+@media (max-width: 992px) and (min-width: 768px) {
+  .type-1182 .x_panel .x_title h2 small {
     margin-left: 0;
     display: block;
     line-height: 25px;
-  }
-}
-@media (min-width: 768px) {
-  .type-1182 .panel {
-    padding: 10px 5px;
-  }
-  .type-1182 .admin-title ul {
-    padding: 0;
   }
 }

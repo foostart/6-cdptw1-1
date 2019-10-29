@@ -240,9 +240,14 @@
 .type-981 .swiper-container nav span:hover {
   opacity: 1;
 }
-.type-981 .swiper-container nav .swiper-next {
-  background-position: top right;
-  margin-left: 10px;
+.type-981 .swiper-container .swiper-button {
+  top: unset !important;
+}
+.type-981 .swiper-container .swiper-button-prev {
+  left: 48%;
+}
+.type-981 .swiper-container .swiper-button-next {
+  left: 50%;
 }
 .type-981 .swiper-wrapper {
   margin: 0 auto;

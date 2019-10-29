@@ -26,7 +26,8 @@
                 <div class="swiper-slide"><a class="swiper-transaction" href="#"><img src="images/1.jpg" alt="image01"><div>http://www.percivalclo.com/</div></a></div>
                 <div class="swiper-slide"><a class="swiper-transaction" href="#"><img src="images/1.jpg" alt="image01"><div>http://www.percivalclo.com/</div></a></div>
                 <div class="swiper-slide"><a class="swiper-transaction" href="#"><img src="images/1.jpg" alt="image01"><div>http://www.percivalclo.com/</div></a></div>
-                <div class="swiper-slide"><a class="swiper-transaction" href="#"><img src="images/1.jpg" alt="image01"><div>http://www.percivalclo.com/</div></a></div>
             </div>
+            <div class="swiper-button swiper-button-prev"></div>
+            <div class="swiper-button swiper-button-next"></div>
         </div>
 </div>

@@ -19,24 +19,25 @@
 ?>
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <!-- Meta, title, CSS, favicons, etc. -->
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Module 1182</title>
+<head>
+    <title>Module 1182</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="<?php echo $url_path ?>/css/font-awesome-v4.6.3.min.css" rel="stylesheet" type="text/css" />
+    <link href="<?php echo $url_path ?>/css/bootstrap-v3.3.6.min.css" rel="stylesheet" type="text/css" />
+    <link href="<?php echo $url_path ?>/css/1182.css" rel="stylesheet" type="text/css" />
 
-        <link href="<?php echo $url_path ?>/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-        <link rel="stylesheet" href="<?php echo $url_path ?>/css/font-awesome.min.css">
-        <link rel="stylesheet" href="<?php echo $url_path ?>/css/1182.css">
-        
-        <script src="<?php echo $url_path ?>/js/jquery-2.1.4.min.js"></script>
-        <script src="<?php echo $url_path ?>/js/bootstrap.min.js"></script>
-        <script src="<?php echo $url_path ?>/js/collapse-close.js"></script>
-    </head>
+    <script src="<?php echo $url_path ?>/js/jquery-v2.2.4.min.js"></script>
+    <script src="<?php echo $url_path ?>/js/jquery-ui.min.js"></script>
+    <script src="<?php echo $url_path ?>/js/bootstrap-v3.3.2.min.js"></script>
+    <script src="<?php echo $url_path ?>/js/1182.js"></script>
+   
+</head>
 
-    <body>
-        <?php  include'1182-content.php'; ?>
-    </body>
+<body>
+    <?php include $dir_block.'/1182-content.php'; ?>
+
+</body>
+
 </html>
