@@ -27,7 +27,14 @@
                 <div class="swiper-slide"><a class="swiper-transaction" href="#"><img src="images/1.jpg" alt="image01"><div>http://www.percivalclo.com/</div></a></div>
                 <div class="swiper-slide"><a class="swiper-transaction" href="#"><img src="images/1.jpg" alt="image01"><div>http://www.percivalclo.com/</div></a></div>
             </div>
-            <div class="swiper-button swiper-button-prev"></div>
-            <div class="swiper-button swiper-button-next"></div>
+            <div class="wrap-button">
+
+            <div class="swiper-button button-prev">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+            <div class="swiper-button button-next">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            </div>
         </div>
 </div>

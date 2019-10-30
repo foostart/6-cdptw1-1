@@ -242,12 +242,25 @@
 }
 .type-981 .swiper-container .swiper-button {
   top: unset !important;
+  background-color: #dbe8de;
+  border: 1.4px solid #90AB98;
+  color: #90AB98;
+  border-radius: 50%;
+  height: 25px;
+  font-weight: 900;
+  width: 25px;
+  cursor: pointer;
+  box-shadow: 0 0 3px 0 #96a89c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.type-981 .swiper-container .swiper-button-prev {
-  left: 48%;
+.type-981 .swiper-container .wrap-button {
+  display: flex;
+  justify-content: center;
 }
-.type-981 .swiper-container .swiper-button-next {
-  left: 50%;
+.type-981 .swiper-container .button-prev {
+  margin-right: 5px;
 }
 .type-981 .swiper-wrapper {
   margin: 0 auto;

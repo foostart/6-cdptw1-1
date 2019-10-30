@@ -24,6 +24,7 @@ $less->compileFile('less/981.less', 'css/981.css');
 
         <link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
         <link rel="stylesheet" type="text/css" href="css/981.css" />
+        <link rel="stylesheet" type="text/css" href="css/fontawesome.min.css" />
 
         <!--Slideshow-->
         <script src="js/modernizr.custom.53451.js"></script>
